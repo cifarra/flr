@@ -1,0 +1,40 @@
+{
+  "name": "flr",
+  "description": "the factory floor — a terminal cockpit for your machines: ssh hosts, tmux sessions, agents, procs and ports",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cifarra/flr.git"
+  },
+  "keywords": [
+    "tui",
+    "terminal",
+    "ssh",
+    "tmux",
+    "launchd",
+    "systemd",
+    "homelab",
+    "opentui",
+    "bun"
+  ],
+  "module": "src/index.tsx",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "bun run src/index.tsx",
+    "demo": "bun run src/index.tsx --demo",
+    "test": "bun test"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/react": "^19.2.18"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@opentui/core": "^0.5.3",
+    "@opentui/react": "^0.5.3",
+    "react": "^19.2.8"
+  }
+}
